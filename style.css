@@ -319,3 +319,38 @@ main {
     left: 10px;
     color: white; /* Example text color */
   }
+
+  @media only screen and (max-width: 768px) {
+    .navbar ul{
+        display: none;
+    }
+
+    nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .logo {
+        margin: 0px;
+        padding: 7px;
+        transform: translateY(-8%);
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    
+    .navbar{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .main-gallery button{
+        width: 40%;
+    }
+}
