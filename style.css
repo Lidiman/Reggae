@@ -24,7 +24,11 @@ nav {
 
 
 .logo, .navbar {
-    margin: 0px 100px;
+    margin: 0px 3rem;
+}
+
+.navbar{
+    margin: 0px 0px;
 }
 
 .logo a {
