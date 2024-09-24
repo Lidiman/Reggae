@@ -357,4 +357,8 @@ main {
     .main-gallery button{
         width: 40%;
     }
+
+    .footer-contact{
+        padding: 20px;
+    }
 }
