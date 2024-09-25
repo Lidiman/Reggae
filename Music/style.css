@@ -319,7 +319,59 @@ h1 {
         gap:22px;
         display: grid;
     }
+    .navbar ul{
+        display: none;
+    }
+
+    nav a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .logo {
+        margin: 0px;
+        padding: 0px;
+        transform: translateY();
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    nav h1{
+        padding-left: 0px;
+    }
+    
+    .navbar{
+        padding: 0px;
+        margin: 0px;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .main-gallery button{
+        width: 40%;
+    }
+
+    .footer-bio{
+        padding: 0px 0px;
+    }
+
+    .footer-about{
+        width: 50%;
+        height: 100%;
+        padding: 0px 0px;
+    }
+
+    .footer-contact{
+        padding-right: 30px;
+        padding-left: 20px;
+    }
 }
+
 
 
 
