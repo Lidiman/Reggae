@@ -6,7 +6,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("image/img.webp");
-    background-size: cover; 
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7); 
     background-repeat: repeat-y; 
     background-blend-mode: darken;
 }
@@ -65,6 +66,9 @@ button:hover{
     width: 240px;
 }
 
+i{
+    color: white;
+}
 
 .logo {
     font-size: 1.5rem;
@@ -107,6 +111,10 @@ button:hover{
     margin-bottom: 0.5rem;
 }
 
+.music-item{
+
+}
+
 .music-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -114,15 +122,24 @@ button:hover{
 }
 
 .music-item {
-    border: 1px solid #ccc;
+    border:none;
+    border-radius: 20px;
+    background-color: rgba(64, 78, 124, 0.5);
     padding: 1rem;
     text-align: center;
+    transition: 1s;
+    transform: scale(0.9);
+    transition: 1s;
 }
 
 .music-item img {
     max-width: 100%;
     height: auto;
     margin-bottom: 1rem;
+}
+
+.music-info {
+    color: white;
 }
 
 .music-info h2 {
@@ -134,12 +151,17 @@ button:hover{
   width: 200px;
   height: 200px;
   object-fit: cover;
-  /* Remove the animation property from here */
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth spin */
+  transition: transform 0.3s ease-in-out;
 }
 
-.music-item img:hover {
-  animation: spin 5s linear infinite; /* Apply animation on hover */
+.music-item:hover {
+    transform: scale(1.01); 
+    transition: 1s;
+}
+
+
+.music-item:hover img {
+  animation: spin 5s linear infinite;
 }
 
 @keyframes spin {
