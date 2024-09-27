@@ -56,5 +56,52 @@ const titleElement = document.getElementById('typing-title');
                             setTimeout(typeWriter, 100); // Normal typing/deleting speed
                           }
                         }
-typeWriter(); // Start the effect
+typeWriter();
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.innerWidth <= 768) { // Apply only for mobile view
+      const headerDescriptionLink = document.querySelector('.header-description a');
+
+      const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.style.width = '98.5%';
+              } else {
+                  entry.target.style.width = '150px';
+              }
+          });
+      }, options);
+
+      observer.observe(headerDescriptionLink);
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.innerWidth <= 768) { // Apply only for mobile view
+      const mainGalleryLink = document.querySelector('.music-list');
+
+      const options = {
+          root: null,
+          rootMargin: '0px',
+          threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  entry.target.style.width = '84%';
+              } else {
+                  entry.target.style.width = '150px';
+              }
+          });
+      }, options);
+
+      observer.observe(mainGalleryLink);
+  }
+});
                         
